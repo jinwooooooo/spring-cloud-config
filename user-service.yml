@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:mem:testdb
+        username: sa
+        password: '{cipher}AQA+XApoWfaIQSqlni4d/OZ+8VWFVHIi5zrRCHFfUu5/f8YEGXNsCYfIDNZqzNrvdxAv7/FjyYMutjDNxKV1bT1M8v0R4wVUKzdXxsxIJhYKGok7zTJBtUrrabGbk4iFEVZh5y8k/GdpqTx0Ea5DKPa6QlayGumZ/bUUfWGH73mBfelMXRpemwSYjR6q0lrEh/3XQm2foe7W5RFADYCk5n/NHT6YlTqVivt5/5VNhKE9kvvEKe/wh2HGlHpemqfvAYsWzBkMwNmSqqzy4uw+sZvA6saxGZ2OjQfbEe5af+ZD8vwGXttivE8JAU+Zet9cIM2rFIMAoPnppUhKmqwnrbXujR+BzDf/uGnB3xjU4IPk+U3MHrAUBCZddH9DExg2u04='
+
+token:
+    expiration_time: 864000000
+    secret: '{cipher}AQAko2sbVlQhHWeAoxbNEnLi00b6TQThjiPIGn0QLv2YNBVil6jwPpzk4BE5o8KqECM3lQYKwQjjSF2cdiIyDaCNXi3bHaVXdJcTZZ4NtRvQvGaCraZkmHDC9E1niWz8RAuxRbF34m8XD/HlQ0e0FFcMtx0Ix7xkDVqvGKzYUpNDtSYBBzeVIgCEbGIWegO4qz5+CmunhdGl52c/1OHe5D/WNx+HqKoeAwht0cn/FNJWEVwRZ5yh0bLp1fyXxgwBjW4p5BDLDy8wX4Re1UhM+GbtmC1jOEjHFynoq9n9+4oknrX6qyKjg9KJ4dc/0Wmt1dVNCtz8HmLRnRBoYaaWxOtb3MCFYI8qOTDLTPYZyirNBj5UPpKdpQ2b/VQzJKys9Wb3tebxKuHjzEzHNNEQalGz'
+
+gateway:
+    ip: 192.168.0.7
+
+order_service:
+    url: http://ORDER-SERVICE/order-service/%s/orders
+    exception:
+        orders_is_empty: User's orders is empty.
